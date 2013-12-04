@@ -65,7 +65,7 @@ syntax keyword IoKeyword uniqueId updateSlot wait while write writeln yield
 
 syntax keyword IoBoolean true false nil
 
-syntax match IoProtos     +\<\u\a*\>(\@!+
+syntax match IoProtos     +\<\u[^ \t=]*\>(\@!+
 syntax match IoDelimiters +[][{}()]+
 
 syntax match IoOperator +\s\([@?;.]\)\1\?\%([ (]\|\_w\)\@=+
