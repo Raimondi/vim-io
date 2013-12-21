@@ -4,13 +4,10 @@
 " Description:	Filetype plugin for the Io language.
 " Last Change:	2013-12-21
 " License:	Vim License (see :help license)
-<<<<<<< HEAD
-
-=======
 "
 " "g:io_eval_cmd" or "b:io_eval_cmd" specify the executable that will be used
 " to evaluate the code.
->>>>>>> ftplugin
+
 " Only do this when not done yet for this buffer.
 if exists("b:did_ftplugin")
   finish
