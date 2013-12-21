@@ -4,7 +4,13 @@
 " Description:	Filetype plugin for the Io language.
 " Last Change:	2013-12-21
 " License:	Vim License (see :help license)
+<<<<<<< HEAD
 
+=======
+"
+" "g:io_eval_cmd" or "b:io_eval_cmd" specify the executable that will be used
+" to evaluate the code.
+>>>>>>> ftplugin
 " Only do this when not done yet for this buffer.
 if exists("b:did_ftplugin")
   finish
@@ -50,7 +56,7 @@ xnoremap <Plug>IoEval :IoEval<CR>
 
 function! s:io_eval(bang, code) range
   " TODO find a good use for the bang.
-  let io_cmd = get(b:, 'io_evalcmd', get(g:, 'io_eval_cmd', 'io'))
+  let io_cmd = get(b:, 'io_eval_cmd', get(g:, 'io_eval_cmd', 'io'))
   if executable(io_cmd) != 1
     echohl ErrorMsg
     echom 'Io: Vim could not find "' . io_cmd . '".'
