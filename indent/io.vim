@@ -36,7 +36,7 @@ setlocal indentkeys+=0)
 " Restore when changing filetype.
 let b:undo_indent = "setlocal indentexpr< indentkeys< lisp< smartindent< autoindent<"
 
- Only define the function once.
+" Only define the function once.
 if exists("*GetIoIndent")
   finish
 endif
